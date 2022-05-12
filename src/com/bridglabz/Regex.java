@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class Regex {
 
-    static Pattern pattern = Pattern.compile("[A-Za-zd$@$! %*?&]{8,}");
+    static Pattern pattern = Pattern.compile("([0-9]*[A-Z])[0-9a-zA-Z]{7,}");
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
