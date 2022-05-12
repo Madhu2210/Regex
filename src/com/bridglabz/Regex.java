@@ -6,12 +6,11 @@ import java.util.regex.Pattern;
 
 public class Regex {
 
-
-    static Pattern pattern = Pattern.compile("91[0-9]{10}");
+    static Pattern pattern = Pattern.compile("(^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{0,8}$)");
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter Mobile Number: ");
+        System.out.println("Enter the Password: ");
         String testString = scanner.next();
         Matcher matcher = pattern.matcher(testString);
 
