@@ -5,11 +5,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Regex {
-    static Pattern pattern = Pattern.compile("abc.[a-z]{0,3}@bl.co.[a-z]{0,2}$");
+
+
+    static Pattern pattern = Pattern.compile("91[0-9]{10}");
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter Email Id: ");
+        System.out.println("Enter Mobile Number: ");
         String testString = scanner.next();
         Matcher matcher = pattern.matcher(testString);
 
